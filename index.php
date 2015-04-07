@@ -5,6 +5,7 @@
         The Five 12 Foundation
     </title>
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="lib/main.css">
 </head>
 <body>
@@ -13,13 +14,13 @@
     <div class="container">
         <img class="logo" src="img/logo.png" alt="">
         <div class="nav pull-left">
-            <button class="menu-btn">
+            <button class="menu-btn" onclick="scrollById('purpose')">
                 Purpose
             </button>
-            <button class="menu-btn">
+            <button class="menu-btn" onclick="scrollById('process')">
                 Process
             </button>
-            <button class="menu-btn">
+            <button class="menu-btn" onclick="scrollById('stats')">
                 Stats
             </button>
             <button class="menu-btn">
@@ -74,15 +75,53 @@
     </a>
 </div>
 
-<section class="section">
+<section class="section" id="purpose">
     <div class="container">
         <div class="lead text-center">
             Purpose Statement of weekend backpacks: one sentence.
         </div>
     </div>
 </section>
+<section class="section" id="process">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <h1 class="text-center">
+                    60%
+                </h1>
+            </div>
+            <div class="col-sm-4">
+                Explanatory text regarding the number of kids who need help and how donations work.
+            </div>
+            <div class="col-sm-4">
+                <h1 class="text-center">
+                    100%
+                </h1>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section" id="stats">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                Volunteers purchase the food
+            </div>
+            <div class="col-sm-3">
+                Volunteers pack the weekend backpacks
+            </div>
+            <div class="col-sm-3">
+                Volunteers deliver the food
+            </div>
+            <div class="col-sm-3">
+                Teachers and Counselors distribute the food
+            </div>
+        </div>
+    </div>
+</section>
 
 <script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/velocity/velocity.min.js"></script>
 <script src="lib/bootstrap/js/bootstrap.min.js"></script>
 <script src="lib/main.js"></script>
 </body>
