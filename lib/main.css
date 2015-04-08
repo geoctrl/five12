@@ -124,3 +124,54 @@ header {
 
 section.section {
   padding: 120px 0; }
+
+.section-lead {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px; }
+  .section-lead span {
+    font-weight: 700;
+    font-size: 1.2em; }
+
+.purpose-box {
+  margin-top: 30px; }
+  .purpose-box .purpose-percentage {
+    font-size: 80px;
+    font-weight: 900;
+    text-align: left;
+    line-height: 56px;
+    padding-left: 20px; }
+  .purpose-box .purpose-text {
+    color: #fff;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 6px; }
+  .purpose-box.purpose-box-orange .purpose-percentage {
+    color: #cc4d1f; }
+  .purpose-box.purpose-box-orange .purpose-text {
+    background-color: #cc4d1f; }
+  .purpose-box.purpose-box-blue .purpose-percentage {
+    color: #20638e; }
+  .purpose-box.purpose-box-blue .purpose-text {
+    background-color: #20638e; }
+
+.section-process {
+  background-color: #e3e3e3; }
+
+.process-box {
+  text-align: center;
+  margin-top: 30px; }
+  .process-box .process-image {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-color: #20638e;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 100px; }
+    .process-box .process-image img {
+      width: 50%; }
+  .process-box .process-text {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 700; }

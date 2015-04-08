@@ -1,4 +1,5 @@
 $color-primary: #de5727;
+$color-accent: #20638E;
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -179,3 +180,90 @@ header {
 section.section {
   padding: 120px 0;
 }
+
+.section-lead {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+  
+  span {
+    font-weight: 700;
+    font-size: 1.2em;
+  }
+}
+
+.purpose-box {
+  margin-top: 30px;
+  
+  .purpose-percentage {
+    font-size: 80px;
+    font-weight: 900;
+    text-align: left;
+    line-height: 56px;
+    padding-left: 20px;
+  }
+  
+  .purpose-text {
+    color: #fff;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 6px;
+  }
+  
+  &.purpose-box-orange {
+    .purpose-percentage {
+      color: darken($color-primary, 5%);
+    }
+    .purpose-text {
+      background-color: darken($color-primary, 5%);
+    }
+  }
+  &.purpose-box-blue {
+    .purpose-percentage {
+      color: $color-accent;
+    }
+    .purpose-text {
+      background-color: $color-accent;
+    }
+  }
+}
+
+.section-process {
+  background-color: #e3e3e3;
+}
+
+.process-box {
+  text-align: center;
+  margin-top: 30px;
+  
+  .process-image {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-color: $color-accent;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 100px;
+    
+    img {
+      width: 50%;
+    }
+  }
+  
+  .process-text {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

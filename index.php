@@ -1,11 +1,14 @@
 <!doctype html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
         The Five 12 Foundation
     </title>
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="lib/main.css">
 </head>
 <body>
@@ -23,10 +26,10 @@
             <button class="menu-btn" onclick="scrollById('stats')">
                 Stats
             </button>
-            <button class="menu-btn">
+            <button class="menu-btn" onclick="scrollById('take-action')">
                 Take Action
             </button>
-            <button class="menu-btn">
+            <button class="menu-btn" onclick="scrollById('about')">
                 About
             </button>
         </div>
@@ -77,26 +80,76 @@
 
 <section class="section" id="purpose">
     <div class="container">
-        <div class="lead text-center">
+        <div class="section-lead">
+            <span>OUR PURPOSE</span><br>
             Purpose Statement of weekend backpacks: one sentence.
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="purpose-box purpose-box-orange">
+                    <div class="purpose-percentage">100%</div>
+                    <div class="purpose-text">
+                        Explanatory text regarding the number of kids who need help and how donations work.
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="purpose-box purpose-box-blue">
+                    <div class="purpose-percentage">60%</div>
+                    <div class="purpose-text">
+                        Explanatory text regarding the number of kids who need help and how donations work.
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
-<section class="section" id="process">
+<section class="section section-process" id="process">
     <div class="container">
+        <div class="section-lead">
+            <span>THE PROCESS</span><br>
+            Something about the process - one sentence
+        </div>
         <div class="row">
-            <div class="col-sm-4">
-                <h1 class="text-center">
-                    60%
-                </h1>
+            <div class="col-sm-3">
+                <div class="process-box">
+                    <div class="process-image">
+                        <img src="img/process-purchase.png" alt="">
+                    </div>
+                    <div class="process-text">
+                        Volunteers purchase the food
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-4">
-                Explanatory text regarding the number of kids who need help and how donations work.
+            <div class="col-sm-3">
+                <div class="process-box">
+                    <div class="process-image">
+                        <img src="img/process-pack.png" alt="">
+                    </div>
+                    <div class="process-text">
+                        Volunteers pack the weekend backpacks
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-4">
-                <h1 class="text-center">
-                    100%
-                </h1>
+            <div class="col-sm-3">
+                <div class="process-box">
+                    <div class="process-image">
+                        <img src="img/process-deliver.png" alt="">
+                    </div>
+                    <div class="process-text">
+                        Volunteers deliver the food
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="process-box">
+                    <div class="process-image">
+                        <img src="img/process-distribute.png" alt="">
+                    </div>
+                    <div class="process-text">
+                        Teachers and Counselors distribute the food
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -104,19 +157,59 @@
 <section class="section" id="stats">
     <div class="container">
         <div class="row">
-            <div class="col-sm-3">
-                Volunteers purchase the food
+            <div class="col-sm-4">
+                <div class="text-center">
+                    <h1>
+                        4800
+                    </h1>
+                    Weekend backpacks delivered this school year.
+                </div>
             </div>
-            <div class="col-sm-3">
-                Volunteers pack the weekend backpacks
+            <div class="col-sm-4">
+                <div class="text-center">
+                    <h1>
+                        400
+                    </h1>
+                    Weekend backpacks delivered each weekend.
+                </div>
             </div>
-            <div class="col-sm-3">
-                Volunteers deliver the food
-            </div>
-            <div class="col-sm-3">
-                Teachers and Counselors distribute the food
+            <div class="col-sm-4">
+                <div class="text-center">
+                    <h1>
+                        12
+                    </h1>
+                    Participating schools
+                </div>
             </div>
         </div>
+    </div>
+</section>
+
+<section class="section" id="take-action">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <button class="btn btn-primary btn-block btn-lg">
+                    DONATE
+                </button>
+                $5.12 will feed a child for an entire weekend.
+                <br/>
+                $20.48 will feed a child for a month.
+            </div>
+            <div class="col-sm-6">
+                <button class="btn btn-primary btn-block btn-lg">
+                    SIGN-UP
+                </button>
+                sign your school up for the weekend backpack program and help save lives.
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section" id="about">
+    <div class="container">
+        <h1 class="text-center">
+            About Five12
+        </h1>
     </div>
 </section>
 
