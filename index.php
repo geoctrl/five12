@@ -9,7 +9,7 @@
     </title>
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="lib/main.css">
+    <link rel="stylesheet" href="lib/main.css?v0">
 </head>
 <body>
 
@@ -23,23 +23,30 @@
             <button class="menu-btn" onclick="scrollById('process')">
                 Process
             </button>
-            <button class="menu-btn" onclick="scrollById('stats')">
-                Stats
+            <button class="menu-btn" onclick="scrollById('progress')">
+                Progress
             </button>
-            <button class="menu-btn" onclick="scrollById('take-action')">
-                Take Action
+            <button class="menu-btn" onclick="scrollById('participate')">
+                Participate
             </button>
             <button class="menu-btn" onclick="scrollById('about')">
-                About
+                About Us
             </button>
+            <a class="menu-btn">
+                International
+            </a>
         </div>
+        
         <div class="nav pull-right">
-            <button class="menu-btn menu-btn-donate">
-                Donate
-            </button>
             <button class="menu-btn menu-btn-hamburger">
                 <i class="glyphicon glyphicon-menu-hamburger"></i>
             </button>
+            <!--        <div class="nav pull-right">-->
+            <!--            <button class="menu-btn menu-btn-hamburger">-->
+            <!--                <i class="glyphicon glyphicon-menu-hamburger"></i>-->
+            <!--            </button>-->
+            <!--        </div>-->
+
         </div>
     </div>
 </header>
@@ -78,8 +85,12 @@
     </a>
 </div>
 
-<section class="section" id="purpose">
+<section class="section section-purpose" id="purpose">
     <div class="container">
+        
+        <div class="section-icon">
+            <img src="img/section-purpose.png" alt="">
+        </div>
         <div class="section-lead">
             <span>OUR PURPOSE</span><br>
             Purpose Statement of weekend backpacks: one sentence.
@@ -106,6 +117,9 @@
 </section>
 <section class="section section-process" id="process">
     <div class="container">
+        <div class="section-icon">
+            <img src="img/section-process.png" alt="">
+        </div>
         <div class="section-lead">
             <span>THE PROCESS</span><br>
             Something about the process - one sentence
@@ -154,38 +168,54 @@
         </div>
     </div>
 </section>
-<section class="section" id="stats">
+<section class="section section-progress" id="progress">
     <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="text-center">
-                    <h1>
-                        4800
-                    </h1>
-                    Weekend backpacks delivered this school year.
-                </div>
+        <div class="section-progress-contain">
+            <div class="section-icon">
+                <img src="img/section-progress.png" alt="">
             </div>
-            <div class="col-sm-4">
-                <div class="text-center">
-                    <h1>
-                        400
-                    </h1>
-                    Weekend backpacks delivered each weekend.
-                </div>
+            <div class="section-lead">
+                <span>OUR PROGRESS</span><br>
+                Something about progress - one sentence
             </div>
-            <div class="col-sm-4">
-                <div class="text-center">
-                    <h1>
-                        12
-                    </h1>
-                    Participating schools
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="progress-box">
+                        <div class="progress-number">
+                            4800
+                        </div>
+                        <div class="progress-text">
+                            Weekend backpacks delivered this school year.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="progress-box">
+                        <div class="progress-number">
+                            400
+                        </div>
+                        <div class="progress-text">
+                            Weekend backpacks delivered each weekend.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="progress-box">
+                        <div class="progress-number">
+                            12
+                        </div>
+                        <div class="progress-text">
+                            Participating schools
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="section" id="take-action">
+<section class="section" id="participate">
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
