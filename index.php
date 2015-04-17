@@ -9,7 +9,7 @@
     </title>
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="lib/main.css?v0">
+    <link rel="stylesheet" href="lib/main.css?v0.0.1">
 </head>
 <body>
 
