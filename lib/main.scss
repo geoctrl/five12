@@ -1,5 +1,5 @@
-$color-primary: #00A0B0;
-$color-accent: #CC333F;
+$color-primary: #DD5826;
+$color-accent: #397198;
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -242,18 +242,18 @@ section.section {
   
   &.purpose-box-orange {
     .purpose-percentage {
-      color: darken($color-primary, 5%);
+      color: $color-primary;
     }
     .purpose-text {
-      background-color: darken($color-primary, 5%);
+      background-color: $color-primary;
     }
   }
   &.purpose-box-blue {
     .purpose-percentage {
-      color: darken($color-primary, 5%);
+      color: $color-primary;
     }
     .purpose-text {
-      background-color: darken($color-primary, 5%);
+      background-color: $color-primary;
     }
   }
 }
@@ -320,6 +320,54 @@ section.section {
     }
   }
   
+}
+
+.section-participate {
+  background-color: $color-accent;
+  
+  .section-lead {
+    color: #fff;
+  }
+  
+  .section-participate-contain {
+    max-width: 800px;
+    margin: 0 auto;
+    
+    .section-participate-box {
+      border: solid 3px darken($color-accent, 10%);
+      background-color: darken($color-accent, 5%);
+      border-radius: 10px;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+      -webkit-transition: background 200ms ease, border 200ms ease;
+      -moz-transition: background 200ms ease, border 200ms ease;
+      -ms-transition: background 200ms ease, border 200ms ease;
+      -o-transition: background 200ms ease, border 200ms ease;
+      transition: background 200ms ease, border 200ms ease;
+      
+      .section-participate-box-title {
+        font-weight: 700;
+        margin-bottom: 10px;
+        font-size: 30px;
+      }
+      
+      .section-participate-box-content {
+        font-size: 16px;
+        
+        span {
+          font-weight: 700;
+        }
+      }
+      
+      &:hover {
+        background-color: $color-primary;
+        border-color: darken($color-primary, 10%);
+        cursor: pointer;
+      }
+    }
+  }
 }
 
 

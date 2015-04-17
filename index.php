@@ -215,22 +215,40 @@
     </div>
 </section>
 
-<section class="section" id="participate">
+<section class="section section-participate" id="participate">
     <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <button class="btn btn-primary btn-block btn-lg">
-                    DONATE
-                </button>
-                $5.12 will feed a child for an entire weekend.
-                <br/>
-                $20.48 will feed a child for a month.
-            </div>
-            <div class="col-sm-6">
-                <button class="btn btn-primary btn-block btn-lg">
-                    SIGN-UP
-                </button>
-                sign your school up for the weekend backpack program and help save lives.
+        <div class="section-icon">
+            <img src="img/section-participate.png" alt="">
+        </div>
+        <div class="section-lead">
+            <span>PARTICIPATE</span><br>
+            Something about people participating - one sentence
+        </div>
+        
+        <div class="section-participate-contain">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="section-participate-box">
+                        <div class="section-participate-box-title">
+                            DONATE
+                        </div>
+                        <div class="section-participate-box-content">
+                            <span>$5.12</span> will feed a child for an entire weekend.
+                            <br/>
+                            <span>$20.48</span> will feed a child for a month.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="section-participate-box">
+                        <div class="section-participate-box-title">
+                            SIGN-UP
+                        </div>
+                        <div>
+                            sign your school up for the weekend backpack program and help save lives.
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

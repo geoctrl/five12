@@ -8,7 +8,7 @@ header {
   right: 0;
   z-index: 9999;
   height: 60px;
-  background: #00a0b0; }
+  background: #dd5826; }
   header .logo {
     margin: 14px 30px 0 0;
     height: 32px;
@@ -22,7 +22,7 @@ header {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #00a0b0;
+    background-color: #dd5826;
     padding: 20px;
     z-index: 0;
     display: none; }
@@ -44,7 +44,7 @@ header {
     cursor: pointer; }
     header .menu-btn:hover {
       background-color: #fff;
-      color: #00a0b0; }
+      color: #dd5826; }
     header .menu-btn.menu-btn-donate {
       border: solid 2px #fff; }
     header .menu-btn.menu-btn-hamburger {
@@ -71,7 +71,7 @@ header {
       -o-transition: background 300ms ease;
       transition: background 300ms ease; }
       header.isFixed {
-        background: #00a0b0; }
+        background: #dd5826; }
       header .logo {
         margin: 10px 40px 0 0;
         height: 38px; }
@@ -93,7 +93,7 @@ header {
         display: none; }
       header .menu-btn.isActive {
         background-color: #fff;
-        color: #00a0b0; } }
+        color: #dd5826; } }
   @media (min-width: 992px) {
     header {
       height: 78px; }
@@ -142,7 +142,7 @@ section.section {
     font-size: 1.2em; }
 
 .section-purpose {
-  background-color: #00727d; }
+  background-color: #b4461c; }
   .section-purpose .section-lead {
     color: #fff; }
 
@@ -171,13 +171,13 @@ section.section {
     border-radius: 6px;
     cursor: text; }
   .purpose-box.purpose-box-orange .purpose-percentage {
-    color: #008997; }
+    color: #dd5826; }
   .purpose-box.purpose-box-orange .purpose-text {
-    background-color: #008997; }
+    background-color: #dd5826; }
   .purpose-box.purpose-box-blue .purpose-percentage {
-    color: #008997; }
+    color: #dd5826; }
   .purpose-box.purpose-box-blue .purpose-text {
-    background-color: #008997; }
+    background-color: #dd5826; }
 
 .section-process {
   background-color: #fff; }
@@ -189,7 +189,7 @@ section.section {
     width: 100px;
     height: 100px;
     display: inline-block;
-    background-color: #cc333f;
+    background-color: #397198;
     line-height: 100px;
     text-align: center;
     border-radius: 100px; }
@@ -213,7 +213,7 @@ section.section {
   width: 220px; }
   .progress-box .progress-number {
     font-size: 70px;
-    color: #00a0b0;
+    color: #dd5826;
     font-weight: 300; }
   .progress-box .progress-text {
     font-weight: 700;
@@ -223,3 +223,36 @@ section.section {
   @media (min-width: 768px) {
     .progress-box .process-text {
       margin-bottom: 0; } }
+
+.section-participate {
+  background-color: #397198; }
+  .section-participate .section-lead {
+    color: #fff; }
+  .section-participate .section-participate-contain {
+    max-width: 800px;
+    margin: 0 auto; }
+    .section-participate .section-participate-contain .section-participate-box {
+      border: solid 3px #2b5573;
+      background-color: #326385;
+      border-radius: 10px;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+      -webkit-transition: background 200ms ease, border 200ms ease;
+      -moz-transition: background 200ms ease, border 200ms ease;
+      -ms-transition: background 200ms ease, border 200ms ease;
+      -o-transition: background 200ms ease, border 200ms ease;
+      transition: background 200ms ease, border 200ms ease; }
+      .section-participate .section-participate-contain .section-participate-box .section-participate-box-title {
+        font-weight: 700;
+        margin-bottom: 10px;
+        font-size: 30px; }
+      .section-participate .section-participate-contain .section-participate-box .section-participate-box-content {
+        font-size: 16px; }
+        .section-participate .section-participate-contain .section-participate-box .section-participate-box-content span {
+          font-weight: 700; }
+      .section-participate .section-participate-contain .section-participate-box:hover {
+        background-color: #dd5826;
+        border-color: #b4461c;
+        cursor: pointer; }
