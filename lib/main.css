@@ -6,7 +6,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 1000;
   height: 60px;
   background: #dd5826; }
   header .logo {
@@ -93,7 +93,12 @@ header {
         display: none; }
       header .menu-btn.isActive {
         background-color: #fff;
-        color: #dd5826; } }
+        color: #dd5826; }
+      header .menu-btn:focus {
+        outline: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none; } }
   @media (min-width: 992px) {
     header {
       height: 78px; }
@@ -131,7 +136,10 @@ header {
     opacity: 1; }
 
 section.section {
-  padding: 180px 0; }
+  padding: 100px 0; }
+  @media (min-width: 768px) {
+    section.section {
+      padding: 0; } }
 
 .section-lead {
   font-size: 24px;
@@ -145,6 +153,10 @@ section.section {
   background-color: #b4461c; }
   .section-purpose .section-lead {
     color: #fff; }
+
+.section-purpose-text {
+  max-width: 860px;
+  margin: 0 auto; }
 
 .section-icon {
   width: 70px;
@@ -161,23 +173,24 @@ section.section {
   .purpose-box .purpose-percentage {
     font-size: 80px;
     font-weight: 900;
-    text-align: left;
     line-height: 56px;
-    padding-left: 20px; }
+    padding-left: 20px;
+    text-align: center; }
   .purpose-box .purpose-text {
-    color: #fff;
+    color: #dd5826;
     padding: 20px;
+    font-weight: 700;
     font-size: 20px;
     border-radius: 6px;
     cursor: text; }
   .purpose-box.purpose-box-orange .purpose-percentage {
-    color: #dd5826; }
+    color: #fff; }
   .purpose-box.purpose-box-orange .purpose-text {
-    background-color: #dd5826; }
+    background-color: #fff; }
   .purpose-box.purpose-box-blue .purpose-percentage {
-    color: #dd5826; }
+    color: #fff; }
   .purpose-box.purpose-box-blue .purpose-text {
-    background-color: #dd5826; }
+    background-color: #fff; }
 
 .section-process {
   background-color: #fff; }
@@ -232,7 +245,7 @@ section.section {
     max-width: 800px;
     margin: 0 auto; }
     .section-participate .section-participate-contain .section-participate-box {
-      border: solid 3px #2b5573;
+      border: solid 3px #fff;
       background-color: #326385;
       border-radius: 10px;
       color: #fff;

@@ -93,22 +93,27 @@
         </div>
         <div class="section-lead">
             <span>OUR PURPOSE</span><br>
-            Purpose Statement of weekend backpacks: one sentence.
+            <div class="section-purpose-text">
+                Elementary school students in Utah County are going home from school on Friday
+                and coming back to school hungry on Monday. Five.12 provides weekend backpacks
+                full of food for those students in need.
+            </div>
         </div>
         <div class="row">
             <div class="col-sm-6">
-                <div class="purpose-box purpose-box-orange">
-                    <div class="purpose-percentage">100%</div>
+                <div class="purpose-box purpose-box-blue">
+                    <div class="purpose-percentage">43%</div>
                     <div class="purpose-text">
-                        Explanatory text regarding the number of kids who need help and how donations work.
+                        of elementary students in Utah County go hungry when they aren’t at school.
                     </div>
                 </div>
             </div>
             <div class="col-sm-6">
-                <div class="purpose-box purpose-box-blue">
-                    <div class="purpose-percentage">60%</div>
+                <div class="purpose-box purpose-box-orange">
+                    <div class="purpose-percentage">100%</div>
                     <div class="purpose-text">
-                        Explanatory text regarding the number of kids who need help and how donations work.
+                        of all donated money goes to buying food for students in need. Period. No
+                        overheads, no ulterior motives, no exceptions.
                     </div>
                 </div>
             </div>
@@ -122,7 +127,8 @@
         </div>
         <div class="section-lead">
             <span>THE PROCESS</span><br>
-            Something about the process - one sentence
+            We purchase. We pack. We deliver. Teachers and Counselors distribute.<br>
+            Students enjoy and return to school physically ready to learn.
         </div>
         <div class="row">
             <div class="col-sm-3">
@@ -176,7 +182,7 @@
             </div>
             <div class="section-lead">
                 <span>OUR PROGRESS</span><br>
-                Something about progress - one sentence
+                We will not stop until every hungry elementary school student in Utah has food on the weekend.
             </div>
 
             <div class="row">
@@ -222,13 +228,13 @@
         </div>
         <div class="section-lead">
             <span>PARTICIPATE</span><br>
-            Something about people participating - one sentence
+            The more we do, the more they will be able to do.
         </div>
         
         <div class="section-participate-contain">
             <div class="row">
                 <div class="col-sm-6">
-                    <div class="section-participate-box">
+                    <div class="section-participate-box" onclick="openContactForm();">
                         <div class="section-participate-box-title">
                             DONATE
                         </div>
@@ -240,12 +246,12 @@
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <div class="section-participate-box">
+                    <div class="section-participate-box" onclick="openContactForm();">
                         <div class="section-participate-box-title">
                             SIGN-UP
                         </div>
                         <div>
-                            sign your school up for the weekend backpack program and help save lives.
+                            We are happy to come to your school. Let us know who you are and how we can help.
                         </div>
                     </div>
                 </div>
@@ -261,7 +267,62 @@
     </div>
 </section>
 
+<div class="modal fade" id="contactFormModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="contactForm">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">
+                        Contact Us
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label>Name<span>*</span> <span></span></label>
+                                <input name="name" class="form-control" type="text" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label>Email<span>*</span> <span></span></label>
+                                <input name="email" class="form-control" type="text" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label>Institution</label>
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label>Phone</label>
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Comment</label>
+                        <textarea class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                    <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
 <script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/jquery-validate/jquery.validate.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
 <script src="lib/velocity/velocity.min.js"></script>
 <script src="lib/bootstrap/js/bootstrap.min.js"></script>
 <script src="lib/main.js"></script>
