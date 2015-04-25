@@ -38,7 +38,7 @@
         </div>
         
         <div class="nav pull-right">
-            <button class="menu-btn menu-btn-hamburger">
+            <button class="menu-btn menu-btn-hamburger" onclick="toggleMenu();">
                 <i class="glyphicon glyphicon-menu-hamburger"></i>
             </button>
             <!--        <div class="nav pull-right">-->
@@ -261,15 +261,35 @@
 </section>
 <section class="section" id="about">
     <div class="container">
-        <h1 class="text-center">
-            About Five12
-        </h1>
+        <div class="section-lead">
+            <span>About Five12</span><br>
+            From Small Beginnings.
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-6">
+                <p class="about-p">Five.12 Foundation is a not for profit foundation based in Alpine, Utah committed to
+                    the idea that anyone can take part in changing the lives of the people around them
+                    even if they only have little. For us it started with a young girl giving all that she had,
+                    $5.12, to help save the life of someone she barely knew.  That experience has given
+                    us a greater perspective on our ability to make the world a better place.  We
+                    consider “the worth of each soul” to be great and equal throughout the world and
+                    are constantly looking for new ways to use what we have to bless the lives of others.
+                </p>
+            </div>
+            <div class="col-sm-6">
+                <div class="videoWrapper">
+                    <iframe src="https://player.vimeo.com/video/52745113" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/52745113">Five12: Small Beginnings</a> from <a href="https://vimeo.com/user14406079">Nick Greer</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
+<div class="copyright">Copyrights/links to stuff/year started</div>
 
 <div class="modal fade" id="contactFormModal">
     <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content modal-content-form">
             <form id="contactForm">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -288,7 +308,7 @@
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label>Email<span>*</span> <span></span></label>
-                                <input name="email" class="form-control" type="text" required>
+                                <input name="email" class="form-control" type="email" required>
                             </div>
                         </div>
                     </div>
@@ -296,19 +316,19 @@
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label>Institution</label>
-                                <input class="form-control" type="text">
+                                <input name="institution" class="form-control" type="text">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label>Phone</label>
-                                <input class="form-control" type="text">
+                                <input name="phone" class="form-control" type="text">
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
                         <label>Comment</label>
-                        <textarea class="form-control"></textarea>
+                        <textarea name="comment" class="form-control"></textarea>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -316,6 +336,25 @@
                     <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">Cancel</button>
                 </div>
             </form>
+        </div>
+        <div class="modal-content modal-content-success">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">
+                    Contact Us
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="text-center">
+                    <h2>Thank you</h2>
+                    <p class="lead">
+                        We'll get back to you soon.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">Close</button>
+            </div>
         </div>
     </div>
 </div>
