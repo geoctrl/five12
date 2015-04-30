@@ -9,7 +9,7 @@
     </title>
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="lib/main.css?v0.0.2">
+    <link rel="stylesheet" href="lib/main.css?v0.0.3">
 </head>
 <body>
 
@@ -59,9 +59,9 @@
     <div class="carousel-inner" role="listbox">
         <div class="item item-slide-1 active">
             <div class="container text-center">
-                <h1>What can we do?</h1>
+                <h1>Student hunger has met it's match.</h1>
                 <div class="lead">
-                    These are some of the things that we can do
+                    It's all of us. Working together. Never giving up.
                 </div>
                 <button class="btn btn-primary btn-lg" onclick="scrollById('purpose')">
                     Learn More
@@ -70,22 +70,22 @@
         </div>
         <div class="item item-slide-2">
             <div class="container text-center">
-                <h1>What can we do?</h1>
+                <h1>Seeing the need, becoming the solution.</h1>
                 <div class="lead">
-                    These are some of the things that we can do
+                    What we've done is only the beginning.
                 </div>
-                <button class="btn btn-primary btn-lg" onclick="scrollById('purpose')">
+                <button class="btn btn-primary btn-lg" onclick="scrollById('progress')">
                     Learn More
                 </button>
             </div>
         </div>
         <div class="item item-slide-3">
             <div class="container text-center">
-                <h1>What can we do?</h1>
+                <h1>Enabling individuals one person at a time.</h1>
                 <div class="lead">
-                    These are some of the things that we can do
+                    Many people need our help. Whatever we have is enough to make a difference.
                 </div>
-                <button class="btn btn-primary btn-lg" onclick="scrollById('purpose')">
+                <button class="btn btn-primary btn-lg" onclick="scrollById('participate')">
                     Learn More
                 </button>
             </div>
@@ -257,9 +257,7 @@
                             DONATE
                         </div>
                         <div class="section-participate-box-content">
-                            <span>$5.12</span> will feed a child for an entire weekend.
-                            <br/>
-                            <span>$20.48</span> will feed a child for a month.
+                            Time, money, or hands that want to help. Whatever you can give is enough to make a difference.
                         </div>
                     </div>
                 </div>
@@ -268,7 +266,7 @@
                         <div class="section-participate-box-title">
                             SIGN-UP
                         </div>
-                        <div>
+                        <div class="section-participate-box-content">
                             We are happy to come to your school. Let us know who you are and how we can help.
                         </div>
                     </div>
@@ -283,7 +281,7 @@
             <div class="section-icon">
                 <img src="img/section-about.png" alt="">
             </div>
-            <span>About Five12</span><br>
+            <span>About Five.12</span><br>
             From Small Beginnings.
         </div>
         
@@ -306,7 +304,7 @@
         </div>
     </div>
 </section>
-<div class="copyright">Copyrights/links to stuff/year started</div>
+<div class="copyright">Copyright &copy; 2015. Founded in 2013. Five.12 Foundation is a 501(c)3 organization.</div>
 
 <div class="modal fade" id="contactFormModal">
     <div class="modal-dialog">
