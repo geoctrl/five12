@@ -76,12 +76,12 @@ header {
   }
   
   @media (min-width: 768px) {
-    background: -moz-linear-gradient(top,  rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.85)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.85) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  rgba(0,0,0,0.85) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  rgba(0,0,0,0.85) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  rgba(0,0,0,0.85) 0%,rgba(0,0,0,0) 100%); /* W3C */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.50) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.50)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.50) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0.50) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0.50) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.50) 0%,rgba(0,0,0,0) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
     -webkit-transition: background 300ms ease;
     -moz-transition: background 300ms ease;
@@ -169,20 +169,65 @@ header {
 
 .carousel {
   
+  .carousel-control {
+    display: none;
+  }
+  
   .item {
     height: 700px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    color: #fff;
+    text-shadow: 0 1px 1px #000;
+    margin-top: 50px;
     
     &.item-slide-1 {
-      background-image: url("../img/slide15.jpg");
+      background-image: url("../img/kid-shadow.jpg");
     }
     
     &.item-slide-2 {
-      background-image: url("../img/slide24.jpg");
+      background-image: url("../img/four-kids.jpg");
+    }
+
+    &.item-slide-3 {
+      background-image: url("../img/kid-homework.jpg");
+    }
+    
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+      text-shadow: 0 1px 1px #000;
+    }
+    
+    .lead {
+      font-size: 30px;
+    }
+
+  }
+
+  @media (min-width: 768px) {
+    
+    .carousel-control {
+      display: block;
+    }
+    
+    .item {
+      padding: 0;
+      margin-top: 0;
+
+      h1 {
+        font-size: 60px;
+        font-weight: 700;
+        text-shadow: 0 1px 1px #000;
+      }
+
+      .lead {
+        font-size: 30px;
+      }
     }
   }
+
 
   .carousel-control,
   .carousel-control.right,
@@ -255,7 +300,7 @@ section.section {
   .purpose-percentage {
     font-size: 80px;
     font-weight: 900;
-    line-height: 56px;
+    line-height: 52px;
     padding-left: 20px;
     text-align: center;
   }
@@ -352,7 +397,8 @@ section.section {
 }
 
 .section-participate {
-  background-color: $color-accent;
+  background: url("../img/four-kids-blue.jpg") center no-repeat;
+  background-size: cover;
   
   .section-lead {
     color: #fff;
@@ -364,7 +410,6 @@ section.section {
     
     .section-participate-box {
       border: solid 3px #fff;
-      background-color: darken($color-accent, 5%);
       border-radius: 10px;
       color: #fff;
       padding: 20px;

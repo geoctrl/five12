@@ -6,7 +6,7 @@ $institution = strip_tags($_POST['institution']);
 $comment = strip_tags($_POST['comment']);
 
 // TO
-$to = 'tonylefler@gmail.com';
+$to = 'kami@thegreerco.com';
 
 // SUBJECT
 $subject = 'Contact Request';
@@ -27,12 +27,12 @@ $message = '
     <div style="text-align: left; background-color: #DD5826; padding: 20px; color: #fff; font-size: 20px; font-weight: 700;">
         Five12 Contact Request
     </div>
-    <div style="text-align: left; background-color: #fff; padding: 20px;">
-        <div>Name: '.$name.'</div>
-        <div>Email: '.$email.'</div>
-        <div>Institution: '.$phone.'</div>
-        <div>Phone: '.$phone.'</div>
-        <div>Comment:</div>
+    <div style="text-align: left; background-color: #fff; padding: 20px; font-size: 16px;">
+        <div>Name: '.$name.'</div><br>
+        <div>Email: '.$email.'</div><br>
+        <div>Institution: '.$institution.'</div><br>
+        <div>Phone: '.$phone.'</div><br>
+        <div>Comment:</div><br>
         <div>"'.$comment.'"</div>
     </div>
 </div>

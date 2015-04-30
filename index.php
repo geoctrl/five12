@@ -9,7 +9,7 @@
     </title>
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="lib/main.css?v0.0.1">
+    <link rel="stylesheet" href="lib/main.css?v0.0.2">
 </head>
 <body>
 
@@ -17,19 +17,19 @@
     <div class="container">
         <img class="logo" src="img/logo.png" alt="">
         <div class="nav pull-left">
-            <button class="menu-btn" onclick="scrollById('purpose')">
+            <button class="menu-btn" onclick="scrollById('purpose');toggleMenu();">
                 Purpose
             </button>
-            <button class="menu-btn" onclick="scrollById('process')">
+            <button class="menu-btn" onclick="scrollById('process');toggleMenu();">
                 Process
             </button>
-            <button class="menu-btn" onclick="scrollById('progress')">
+            <button class="menu-btn" onclick="scrollById('progress');toggleMenu();">
                 Progress
             </button>
-            <button class="menu-btn" onclick="scrollById('participate')">
+            <button class="menu-btn" onclick="scrollById('participate');toggleMenu();">
                 Participate
             </button>
-            <button class="menu-btn" onclick="scrollById('about')">
+            <button class="menu-btn" onclick="scrollById('about');toggleMenu();">
                 About Us
             </button>
             <a class="menu-btn">
@@ -53,23 +53,41 @@
 
 
 
-<div id="hero-unit" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#hero-unit" data-slide-to="0" class="active"></li>
-        <li data-target="#hero-unit" data-slide-to="1"></li>
-    </ol>
+<div id="hero-unit" class="carousel slide" data-ride="carousel" data-interval="7000">
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
         <div class="item item-slide-1 active">
-            <div class="carousel-caption">
-                hey hey hey
+            <div class="container text-center">
+                <h1>What can we do?</h1>
+                <div class="lead">
+                    These are some of the things that we can do
+                </div>
+                <button class="btn btn-primary btn-lg" onclick="scrollById('purpose')">
+                    Learn More
+                </button>
             </div>
         </div>
         <div class="item item-slide-2">
-            <div class="carousel-caption">
-                ...
+            <div class="container text-center">
+                <h1>What can we do?</h1>
+                <div class="lead">
+                    These are some of the things that we can do
+                </div>
+                <button class="btn btn-primary btn-lg" onclick="scrollById('purpose')">
+                    Learn More
+                </button>
+            </div>
+        </div>
+        <div class="item item-slide-3">
+            <div class="container text-center">
+                <h1>What can we do?</h1>
+                <div class="lead">
+                    These are some of the things that we can do
+                </div>
+                <button class="btn btn-primary btn-lg" onclick="scrollById('purpose')">
+                    Learn More
+                </button>
             </div>
         </div>
     </div>
@@ -228,7 +246,7 @@
         </div>
         <div class="section-lead">
             <span>PARTICIPATE</span><br>
-            The more we do, the more they will be able to do.
+            The more we do, the more we enable them to do.
         </div>
         
         <div class="section-participate-contain">
@@ -262,6 +280,9 @@
 <section class="section" id="about">
     <div class="container">
         <div class="section-lead">
+            <div class="section-icon">
+                <img src="img/section-about.png" alt="">
+            </div>
             <span>About Five12</span><br>
             From Small Beginnings.
         </div>
